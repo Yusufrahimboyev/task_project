@@ -21,6 +21,7 @@ dependencies:
   intl: ^0.20.2
   intl_utils: ^2.8.7
   flutter_localization: ^0.3.3
+  flutter_svg: ^2.2.4
 
   # Networking and Connectivity
   dio: ^5.9.2
@@ -45,14 +46,108 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
-  # Note: You likely need build_runner, freezed, and json_serializable here
-  # if you are using freezed/json_annotation.
+
   build_runner: ^2.4.13
-  
+
   json_serializable: ^6.9.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.7
 
 flutter:
-  uses-material-design: true
 
-  # assets:
-  #   - assets/images/
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/logo/
+  uses-material-design: true
+  fonts:
+    - family: Overpass
+      fonts:
+        # Thin (100)
+        - asset: assets/fonts/Overpass/static/Overpass-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Overpass/static/Overpass-ThinItalic.ttf
+          weight: 100
+          style: italic
+
+        # ExtraLight (200)
+        - asset: assets/fonts/Overpass/static/Overpass-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Overpass/static/Overpass-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+
+        # Light (300)
+        - asset: assets/fonts/Overpass/static/Overpass-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Overpass/static/Overpass-LightItalic.ttf
+          weight: 300
+          style: italic
+
+        # Regular (400)
+        - asset: assets/fonts/Overpass/static/Overpass-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Overpass/static/Overpass-Italic.ttf
+          weight: 400
+          style: italic
+
+        # Medium (500)
+        - asset: assets/fonts/Overpass/static/Overpass-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Overpass/static/Overpass-MediumItalic.ttf
+          weight: 500
+          style: italic
+
+        # SemiBold (600)
+        - asset: assets/fonts/Overpass/static/Overpass-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Overpass/static/Overpass-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+
+        # Bold (700)
+        - asset: assets/fonts/Overpass/static/Overpass-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Overpass/static/Overpass-BoldItalic.ttf
+          weight: 700
+          style: italic
+
+        # ExtraBold (800)
+        - asset: assets/fonts/Overpass/static/Overpass-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Overpass/static/Overpass-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+
+        # Black (900)
+        - asset: assets/fonts/Overpass/static/Overpass-Black.ttf
+          weight: 900
+
+
+
+flutter_intl:
+  enabled: true
+  main_locale: en
+  arb_dir: lib/src/common/l10n
+  output_dir: lib/src/common/l10n/generated
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path_android: "assets/logo/weather_logo.png"
+  image_path_ios: "assets/logo/weather_logo.png"
+  adaptive_icon_background: "#07ACFC"
+
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  background_color_ios: "#07ACFC"
+
+
+flutter_native_splash:
+  color: "#07ACFC"
+  image: "assets/logo/weather_logo.png"
+
+  android_12:
+    image: "assets/logo/weather_logo.png"
+    color: "#07ACFC"
+

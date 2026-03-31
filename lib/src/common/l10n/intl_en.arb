@@ -1,5 +1,14 @@
 {
   "@@locale": "en",
-  "appName": "Time Trigger",
-  "hello": "Hello!"
+  "appName": "AccuWeather",
+  "hello": "Hello!",
+  "forecastrep": "Forecast report",
+  "urnotification": "Your notification",
+  "Searchhere": "Search here",
+  "Research": "Recent search",
+  "Back": "Back",
+  "today": "Today",
+  "NexForecast": "Next Forecast",
+  "new_msg": "New",
+  "earlier": "Earlier"
 }

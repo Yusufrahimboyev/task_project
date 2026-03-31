@@ -7,21 +7,19 @@ class AppTheme {
     useMaterial3: true,
     brightness: Brightness.light,
     colorScheme: lightColorScheme,
-
+    fontFamily: "Overpass",
   );
   static final darkTheme = ThemeData(
     useMaterial3: true,
     brightness: Brightness.light,
     colorScheme: darkColorScheme,
-
+    fontFamily: "Overpass",
   );
 }
 
-
-
 const ColorScheme lightColorScheme = ColorScheme(
   brightness: Brightness.light,
-  primary: Color(0xFF2E7D32),
+  primary: Color(0xFF0F87C7),
   onPrimary: Color(0xFFFFFFFF),
   primaryContainer: Color(0xFFA5D6A7),
   onPrimaryContainer: Color(0xFF000000),
@@ -69,11 +67,9 @@ const ColorScheme lightColorScheme = ColorScheme(
   surfaceTint: Color(0xFF2E7D32),
 );
 
-/// Dark [ColorScheme] made with FlexColorScheme v8.4.0.
-/// Requires Flutter 3.22.0 or later.
 const ColorScheme darkColorScheme = ColorScheme(
   brightness: Brightness.dark,
-  primary: Color(0xFFA5D6A7),
+  primary: Color(0xFF0F87C7),
   onPrimary: Color(0xFF000000),
   primaryContainer: Color(0xFF1B5E20),
   onPrimaryContainer: Color(0xFFFFFFFF),

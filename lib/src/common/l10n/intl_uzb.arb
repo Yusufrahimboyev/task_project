@@ -1,6 +1,14 @@
 {
- "@@locale": "en",
-   "appName": "Time Trigger",
-   "hello": "Salom!"
-  }
+  "@@locale": "uz",
+  "appName": "AccuWeather",
+  "hello": "Salom!",
+  "forecastrep": "Ob-havo ma'lumoti",
+  "urnotification": "Bildirishnomalaringiz",
+  "Searchhere": "Shu yerdan qidirish",
+  "Research": "Oxirgi qidiruvlar",
+  "Back": "Orqaga",
+  "today": "Bugun",
+  "NexForecast": "Keyingi prognozlar",
+  "new_msg": "Yangi",
+  "earlier": "Avvalgi"
 }
